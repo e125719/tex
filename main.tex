@@ -1,0 +1,46 @@
+\documentclass[a4j,12pt]{jreport}
+\usepackage[dvips, dvipdfmx]{graphicx}
+\usepackage{mythesis}
+\usepackage{here}
+\usepackage{url}
+\setlength{\itemsep}{-1zh}
+
+\title{}
+\icon{
+	\includegraphics[width=80mm, bb=0 0 595 842]{fig/ryukyu.pdf}
+}
+\year{平成27年度 卒業論文}
+\belongto{琉球大学工学部情報工学科}
+\author{125719G 長倉貴洋 \\ 指導教員 {谷口祐治}}
+
+\makeatletter
+\newcommand{\figcaption}[1]{\def\@captype{figure}\caption{#1}}
+\newcommand{\tblcaption}[1]{\def\@captype{table}\caption{#1}}
+\makeatother
+\setlength\abovecaptionskip{0pt}
+
+\begin{document}
+
+\maketitle
+\baselineskip 17pt plus 1pt minus 1pt
+
+\pagenumbering{arabic}
+\setcounter{page}{0}
+
+\tableofcontents
+\listoffigures
+\listoftables
+
+\input{chapter1.tex}
+
+\input{chapter2.tex}
+
+\input{chapter3.tex}
+
+\input{chapter4.tex}
+
+\input{bibliography.tex}
+
+\input{thanks.tex}
+
+\end{document}
