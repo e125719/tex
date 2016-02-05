@@ -4,8 +4,15 @@
 
 \section{研究背景と目的}
 スマートデバイスは, 2010年以降から急速な発展と普及を遂げている.
-日本国内における, 近年の情報通信機器の世帯保有状況は, 2010年におけるスマートフォンの保有率が9.7\%, タブレット型端末が7.2\%であるのに対し, 2015年ではスマートフォンが62.6\%, タブレット型端末が21.9\%となっており, 過去5年間でスマートフォンでは6.45倍, タブレット型端末では3.04倍の爆発的普及を実現している.
+日本国内における, 近年の情報通信機器の世帯保有状況[1]は, 2010年におけるスマートフォンの保有率が9.7\%, タブレット型端末が7.2\%であるのに対し, 2015年ではスマートフォンが62.6\%, タブレット型端末が21.9\%となっており, 過去5年間でスマートフォンでは6.45倍, タブレット型端末では3.04倍の爆発的普及を実現している.(図1.1参照.)
 近年は, 一人でスマートデバイスを複数台所有していることも珍しくない.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=16cm]{fig/n4301010.png}
+\end{center}
+\caption{情報通信端末の世帯保有数の推移(出典：総務省「平成25年度版 情報通信白書のポイント」)}
+\end{figure}
 
 また, スマートフォン, タブレット型端末は, それらが登場する以前に普及していたフィーチャーフォンやPHSとは圧倒的な機能差があり, 非常に多機能なデバイスである.
 その多機能性を利用したシステムも数多く開発されており, GPSを利用したナビゲーションシステムや複数端末との通信を利用したソーシャルゲームなど, スマートデバイス普及以前では実現が難しかった様々なシステムが実用化され, 多くのユーザに利用されている.
@@ -23,7 +30,7 @@
 2010年以降から普及しているスマートデバイスであるが, 現在, それらに搭載されている代表的なオペレーティングシステムとして, iOS, Androidが挙げられる.
 さらに, タブレット型パーソナルコンピュータの開発, 販売競争も激化しており, 容易に持ち運びが可能なパソコンとしてMicrosoft Windows 10が普及し始めている.
 
-表1.1に, 2013年から2015年にかけての, スマートデバイス用OSの市場占有率のうち, iOS/Android/Windowsの推移を示す.
+表1.1に, 2013年から2015年にかけての, スマートデバイス用OSの市場占有率[2]のうち, iOS/Android/Windowsの推移を示す.
 
 \begin{table}[htb]
 \begin{center}
@@ -137,32 +144,93 @@ Windows 8以降は, タブレット型スマートデバイスでも利用する
 
 \begin{table}[htb]
 \begin{center}
-\begin{tabular}{|l|l|l|} \hline
-リリースネーム & バージョン & リリース年月 \\ \hline \hline
-Windows 1.0 & 1.0 & 1985年11月 \\ \hline
-Windows 2.0 & 2.0 & 1987年12月 \\ \hline
-Windows 2.1 & 2.1 & 1988年5月 \\ \hline
-Windows 3.0 & 3.0 & 1990年5月 \\ \hline
-Windows 3.1 & 3.1 & 1992年4月 \\ \hline
-Windows NT 3.1 & NT 3.10 & 1993年7月 \\ \hline
-Windows 3.2 & 3.2 & 1993年11月 \\ \hline
-Windows NT 3.5 & NT 3.50 & 1994年9月 \\ \hline
-Windows 95 & 4.00 & 1995年8月 \\ \hline
-Windows NT 4.0 & NT 4.0 & 1996年8月 \\ \hline
-Windows 98 & 4.10 & 1998年6月 \\ \hline
-Windows 2000 & NT 5.0 & 2000年2月 \\ \hline
-Windows ME & 4.90 & 2000年9月 \\ \hline
-Windows XP & NT 5.1 & 2001年10月 \\ \hline
-Windows XP Professional x64 & NT 5.2 & 2005年4月 \\ \hline
-Windows Vista & NT 6.0 & 2007年1月 \\ \hline
-Windows 7 & NT 6.1 & 2009年10月 \\ \hline
-Windows 8 & NT 6.2 & 2012年10月 \\ \hline
-Windows 8.1 & NT 6.3 & 2013年10月 \\ \hline
-Windows 10 & NT 10.0 & 2015年7月 \\ \hline
+\begin{tabular}{|l|l|l|p{5.5cm}|} \hline
+リリースネーム & バージョン & リリース年月 & 特徴 \\ \hline \hline
+Windows 1.0 & 1.0 & 1985年11月 & MS-DOSコマンドを入力するのではなく, 画面上をマウスでクリックして動作させる \\ \hline
+Windows 2.0 & 2.0 & 1987年12月 & コントロールパネル, キーボードショートカットの導入 \\ \hline
+Windows 3.0 & 3.0 & 1990年5月 & プログラムマネージャ, ファイルマネージャ,の導入 \\ \hline
+Windows 95 & 4.00 & 1995年8月 & スタートメニュー, タスクバー, ウィンドウの最小化/最大化/閉じるボタンの導入 \\ \hline
+Windows 98 & 4.10 & 1998年6月 & コンシューマ向けに設計された初めてのバージョン \\ \hline
+Windows 2000 & NT 5.0 & 2000年2月 & ファイル暗号化システム, Windows File Protectionの導入 \\ \hline
+Windows ME & 4.90 & 2000年9月 & システム復元機能の導入 \\ \hline
+Windows XP & NT 5.1 & 2001年10月 & 二列で構成されたスタートメニュー, タスクバーのタスク結合機能の導入 \\ \hline
+Windows Vista & NT 6.0 & 2007年1月 & 透明なウィンドウなどの視覚効果の導入 \\ \hline
+Windows 7 & NT 6.1 & 2009年10月 & サムネイルプレビュー, 最近開いたファイルをリスト表示するジャンプリストの導入 \\ \hline
+Windows 8 & NT 6.2 & 2012年10月 & タッチスクリーンデバイスへの対応, スタートボタンを廃止し, スタートスクリーンを導入 \\ \hline
+Windows 8.1 & NT 6.3 & 2013年10月 & スタートボタンの復活, 最大4つのアプリケーションを並べて使用できる機能の導入 \\ \hline
+Windows 10 & NT 10.0 & 2015年7月 & 生体認証テクノロジーの導入 \\ \hline
 \end{tabular}
 \caption{Microsoft Windowsのメジャーバージョンとリリース年月の一覧}
 \end{center}
 \end{table}
+
+\begin{figure}[htb]
+\begin{center}
+\begin{tabular}{c}
+
+\begin{minipage}{0.5\hsize}
+\begin{center}
+\includegraphics[width=7.5cm]{fig/windows1.jpg}
+\caption{Windows 1.0のデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows3.jpg}
+\caption{Windows 3.0のデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows98.jpg}
+\caption{Windows 98のデスクトップ画面}
+\end{center}
+\end{minipage}
+
+\begin{minipage}{0.5\hsize}
+\begin{center}
+\includegraphics[width=7.5cm]{fig/windows2.jpg}
+\caption{Windows 2.0のデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows95.jpg}
+\caption{Windows 95のデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows2000.jpg}
+\caption{Windows 2000のデスクトップ画面}
+\end{center}
+\end{minipage}
+
+\end{tabular}
+\end{center}
+\end{figure}
+
+\begin{figure}[htb]
+\begin{center}
+\begin{tabular}{c}
+
+\begin{minipage}{0.5\hsize}
+\begin{center}
+\includegraphics[width=7.5cm]{fig/windowsXP.jpg}
+\caption{Windows XPのデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows7.jpg}
+\caption{Windows 7のデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows8_1.jpg}
+\caption{Windows 8.1のデスクトップ画面}
+\end{center}
+\end{minipage}
+
+\begin{minipage}{0.5\hsize}
+\begin{center}
+\includegraphics[width=7.5cm]{fig/windowsVista.jpg}
+\caption{Windows Vistaのデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows8.png}
+\caption{Windows 8のデスクトップ画面}
+
+\includegraphics[width=7.5cm]{fig/windows10.jpg}
+\caption{Windows 10のデスクトップ画面}
+\end{center}
+\end{minipage}
+
+\end{tabular}
+\end{center}
+\end{figure}
 
 \subsection{本研究で使用するスマートデバイス用オペレーティングシステム}
 本研究では, 使用するスマートデバイス用オペレーティングシステムをiOSとする.
