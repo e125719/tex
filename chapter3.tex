@@ -29,6 +29,8 @@ iOSアプリケーションには, 以下の機能を実装する.
 \item 取得した文字列をWebアプリケーションのデータベースにPOSTする.
 \end{itemize}
 
+これらの要件を, UMLを用いて分析する.
+
 \subsection{ユースケース}
 ユーザがiOSデバイスのカメラを用いて撮影した画像から, 文字列を検出する.
 その文字列をWebアプリケーションのデータベースに送信し, 集積する.
@@ -443,6 +445,8 @@ Webアプリケーションには, 以下の機能を実装する.
 \item 集積したデータを文字列, 日付にて検索する.
 \end{itemize}
 
+これらの要件を, UMLを用いて分析する.
+
 \subsection{ユースケース}
 ユーザはiOSアプリケーションから送信された全データを閲覧することができ, 文字列, 送信した日付で検索することができる.
 
@@ -454,6 +458,14 @@ Webアプリケーションには, 以下の機能を実装する.
 \end{figure}
 
 \subsection{クラス}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=17cm]{fig/class_web.png}
+\end{center}
+\caption{Webアプリケーションのクラス図}
+\end{figure}
+
 \subsubsection{(A) Userクラス}
 \begin{itemize}
 \item 属性
@@ -510,9 +522,3 @@ Webアプリケーションにユーザ登録したユーザがサインイン�
 
 \end{itemize}
 
-\begin{figure}
-\begin{center}
-\includegraphics[width=17cm]{fig/class_web.png}
-\end{center}
-\caption{Webアプリケーションのクラス図}
-\end{figure}
