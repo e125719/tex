@@ -19,34 +19,34 @@
 \contentsline {subsection}{\numberline {2.2.2}Ruby on Rails}{15}
 \contentsline {subsubsection}{(A) Ruby on Railsの基本理念}{15}
 \contentsline {subsubsection}{(B) Ruby on RailsにおけるMVCアーキテクチャ}{16}
-\contentsline {subsection}{\numberline {2.2.3}PostgreSQL}{17}
-\contentsline {subsubsection}{(A) リレーショナルデータベース(Relational DataBase)}{17}
-\contentsline {subsubsection}{(B) Relational DataBase Management System}{18}
-\contentsline {subsection}{\numberline {2.2.4}Heroku}{19}
-\contentsline {subsubsection}{(A) PaaS}{19}
-\contentsline {subsubsection}{(B) オンプレミス, IaaS, SaaSとの違い}{21}
-\contentsline {section}{\numberline {2.3}VPSサーバ}{21}
-\contentsline {subsection}{\numberline {2.3.1}CentOS}{22}
-\contentsline {chapter}{\numberline {第3章}実装}{23}
-\contentsline {section}{\numberline {3.1}システムの流れ}{23}
-\contentsline {section}{\numberline {3.2}iOSアプリケーション}{23}
-\contentsline {subsection}{\numberline {3.2.1}要件定義}{23}
-\contentsline {subsection}{\numberline {3.2.2}ユースケース}{23}
-\contentsline {subsection}{\numberline {3.2.3}クラス}{25}
-\contentsline {subsubsection}{(A) Cameraクラス}{25}
-\contentsline {subsubsection}{(B) Processingクラス}{28}
-\contentsline {subsubsection}{(C) Recognizeクラス}{30}
-\contentsline {subsubsection}{(D) PostDBクラス}{30}
-\contentsline {section}{\numberline {3.3}Webアプリケーション}{31}
-\contentsline {subsection}{\numberline {3.3.1}要件定義}{31}
-\contentsline {subsection}{\numberline {3.3.2}ユースケース}{31}
-\contentsline {subsection}{\numberline {3.3.3}クラス}{33}
-\contentsline {subsubsection}{(A) Userクラス}{33}
-\contentsline {subsubsection}{(B) StringDBクラス}{34}
-\contentsline {chapter}{\numberline {第4章}本研究の利用例, 利用アイデア}{35}
-\contentsline {section}{\numberline {4.1}利用アイデア１：緊急車両や警察車両への住所通達システム}{35}
-\contentsline {subsection}{\numberline {4.1.1}背景と目的}{35}
-\contentsline {subsection}{\numberline {4.1.2}システムの要件定義}{35}
-\contentsline {subsection}{\numberline {4.1.3}このシステムを利用することで解決する問題}{35}
-\contentsline {section}{\numberline {4.2}}{36}
-\contentsline {subsection}{\numberline {4.2.1}}{36}
+\contentsline {subsection}{\numberline {2.2.3}PostgreSQL}{19}
+\contentsline {subsubsection}{(A) リレーショナルデータベース(Relational DataBase)}{21}
+\contentsline {subsubsection}{(B) Relational DataBase Management System}{22}
+\contentsline {subsection}{\numberline {2.2.4}Heroku}{22}
+\contentsline {subsubsection}{(A) PaaS}{22}
+\contentsline {subsubsection}{(B) オンプレミス, IaaS, SaaSとの違い}{23}
+\contentsline {section}{\numberline {2.3}VPSサーバ}{25}
+\contentsline {subsection}{\numberline {2.3.1}CentOS}{25}
+\contentsline {chapter}{\numberline {第3章}実装}{26}
+\contentsline {section}{\numberline {3.1}システムの流れ}{26}
+\contentsline {section}{\numberline {3.2}iOSアプリケーション}{26}
+\contentsline {subsection}{\numberline {3.2.1}要件定義}{26}
+\contentsline {subsection}{\numberline {3.2.2}ユースケース}{26}
+\contentsline {subsection}{\numberline {3.2.3}クラス}{28}
+\contentsline {subsubsection}{(A) Cameraクラス}{28}
+\contentsline {subsubsection}{(B) Processingクラス}{31}
+\contentsline {subsubsection}{(C) Recognizeクラス}{33}
+\contentsline {subsubsection}{(D) PostDBクラス}{33}
+\contentsline {section}{\numberline {3.3}Webアプリケーション}{34}
+\contentsline {subsection}{\numberline {3.3.1}要件定義}{34}
+\contentsline {subsection}{\numberline {3.3.2}ユースケース}{34}
+\contentsline {subsection}{\numberline {3.3.3}クラス}{35}
+\contentsline {subsubsection}{(A) Userクラス}{35}
+\contentsline {subsubsection}{(B) StringDBクラス}{36}
+\contentsline {chapter}{\numberline {第4章}本研究の利用例, 利用アイデア}{37}
+\contentsline {section}{\numberline {4.1}利用アイデア１：緊急車両や警察車両への住所通達システム}{37}
+\contentsline {subsection}{\numberline {4.1.1}背景と目的}{37}
+\contentsline {subsection}{\numberline {4.1.2}システムの要件定義}{37}
+\contentsline {subsection}{\numberline {4.1.3}このシステムを利用することで解決する問題}{37}
+\contentsline {section}{\numberline {4.2}}{38}
+\contentsline {subsection}{\numberline {4.2.1}}{38}

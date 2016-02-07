@@ -229,7 +229,14 @@ Ruby on Railsの特徴は, その開発理念である“同じことを繰り�
 \subsubsection{(B) Ruby on RailsにおけるMVCアーキテクチャ}
 Ruby on RailsはMVC(Model View Controller)アーキテクチャを採用している.
 
-MVCアーキテクチャとは, アプリケーションの内部データをユーザが直接参照することがないよう, Model, View, Controllerの3つの要素に分割したものである.
+MVCアーキテクチャ[55]とは, アプリケーションの構造をModel/View/Controllerの3つの要素に分割し, アプリケーションの内部データを利用者が直接参照することがないようにしたものである.(図2.1参照.)
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{fig/mvc.png}
+\caption{MVCアーキテクチャの簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}
+\end{center}
+\end{figure}
 
 \begin{itemize}
 \item Model
@@ -238,16 +245,30 @@ MVCアーキテクチャとは, アプリケーションの内部データをユ
 データの変更をビューに通知するのもModelの役割である.
 
 Ruby on RailsにおけるModelは, 使用しているデータベースのテーブルごとにModelが用意されている.
-利用者からのリクエストで呼びだされたアクションは, Modelを介してデータベースとのやり取りを行い, データの取得や新しいデータの格納を行う.
+利用者からのリクエストで呼びだされたアクションは, Modelを介してデータベースとのやり取りを行い, データの取得や新しいデータの格納を行う.(図2.2参照.)
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{fig/model.png}
+\caption{Modelの動作簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}
+\end{center}
+\end{figure}
 
 \item View
 
-Modelのデータを取り出し, ユーザが見るのに適した形で表示する要素.
-すなわち, データをUIへ出力するのが役割である.
+Modelのデータを取り出し, ユーザが見るのに適した形で表示するHTML文書を作成する要素.
+すなわち, データをブラウザへ出力するための雛形を作成するのが役割である.
 
 Ruby on RailsにおけるViewは, アプリケーション内に複数用意されている.
 Viewの1つ1つが与えられたデータから生成されたHTML文書となっている.
-アクションに対応するViewが1つ用意されており, アクションが実行されると, 紐付けされたViewが呼び出されて利用者へ返すWebページを作成する.
+アクションに対応するViewが1つ用意されており, アクションが実行されると, 紐付けされたViewが呼び出されて利用者へ返すWebページを作成する.(図2.3参照.)
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{fig/view.png}
+\caption{Viewの動作簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}
+\end{center}
+\end{figure}
 
 \item Controller
 
@@ -255,8 +276,24 @@ Viewの1つ1つが与えられたデータから生成されたHTML文書とな�
 すなわち, UIからの入力を担当する.
 
 Ruby on RailsにおけるControllerは, アプリケーション内に複数用意されている.
-1つ1つのControllerは, ユーザの入力をアクションとして紐付けされているModelへと命令する.
+また, 各Controllerの中には複数のアクションが定義されており, URLとして届いた利用者のリクエストを分析し, どのControllerに含まれるどのアクションを実行すべきか判断するための「ルーティング」が行われる.(図2.4参照.)
 
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{fig/route.png}
+\caption{ルーティング(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}
+\end{center}
+\end{figure}
+
+ルーティングによって次に行われるべきアクションが決定した際, そのアクションに紐付けされたModelがデータベースとのやり取りを, Viewがユーザへ返すHTML文書を作成する.
+返ってきたHTML文書をControllerがリクエストした利用者に見える形でブラウザに返す.(図2.5参照).
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=15cm]{fig/controller.png}
+\caption{Controllerの動作簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}
+\end{center}
+\end{figure}
 \end{itemize}
 
 \subsection{PostgreSQL}
@@ -357,7 +394,7 @@ Webアプリケーション開発の補助を行うサービスとして, 「Iaa
 
 \begin{figure}
 \begin{center}
-\includegraphics{fig/paas.png}
+\includegraphics[width=16cm]{fig/paas.png}
 \caption{オンプレミス, IaaS, PaaS, SaaSの比較(出典：CodeZine『PaaSの基礎知識とHerokuで開発を始める準備』)}
 \end{center}
 \end{figure}
