@@ -1,16 +1,15 @@
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {1.1}{\ignorespaces 情報通信端末の世帯保有数の推移(出典：総務省「平成26年通信利用動向調査」 http://www.soumu.go.jp/johotsusintokei/statistics/data/150717\_1.pdf)}}{2}
+\contentsline {figure}{\numberline {1.1}{\ignorespaces 情報通信端末の世帯保有数の推移}}{2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces MVCアーキテクチャの簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}}{15}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Modelの動作簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}}{16}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Viewの動作簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}}{16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces ルーティング(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}}{17}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Controllerの動作簡略図(出典：RubyLife『RailsにおけるMVC(モデル/ビュー/コントローラ)』)}}{18}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces オンプレミス, IaaS, PaaS, SaaSの比較(出典：CodeZine『PaaSの基礎知識とHerokuで開発を始める準備』)}}{21}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces MVCアーキテクチャの簡略図}}{14}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Modelの動作簡略図}}{15}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Viewの動作簡略図}}{16}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces ルーティング}}{16}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Controllerの動作簡略図}}{17}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces オンプレミス, IaaS, PaaS, SaaSの比較}}{20}
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {3.1}{\ignorespaces iOSアプリケーションのユースケース図}}{24}
 \contentsline {figure}{\numberline {3.2}{\ignorespaces iOSアプリケーションのクラス図}}{25}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Webアプリケーションのユースケース図}}{32}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Webアプリケーションのクラス図}}{33}
-\addvspace {10\p@ }
+\contentsline {figure}{\numberline {3.3}{\ignorespaces Webアプリケーションのユースケース図}}{31}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces Webアプリケーションのクラス図}}{32}
 \addvspace {10\p@ }

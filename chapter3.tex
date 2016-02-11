@@ -1,11 +1,30 @@
-\chapter{実装}
+\chapter{システムの実装}
 \label{chap:poordirection}
 
-\section{システムの流れ}
-本研究にて構築するシステムは, 主に「iOSアプリケーション」, 「Webアプリケーション」, 「データベース」の三要素にて成り立つ.(図3.1参照.)
+\section{車両認識システム}
+本研究にて構築するシステムは, 主に「iOSアプリケーション」, 「Webアプリケーション」, 「データベース」の三要素にて成り立つ(図3.1).
+
+\subsection{システムの流れ}
+本研究にて構築するシステムは,
+\begin{itemize}
+\item iOSアプリケーション
+\begin{enumerate}
+\item iOSアプリケーションにて車両のナンバープレートを撮影する.
+\item iOSアプリケーションの内部処理にて, 撮影画像から車両ナンバーを文字列として取得する.
+\item 取得した車両ナンバーをWebアプリケーション側のPostgreSQLに送信する.
+\end{enumerate}
+という流れを想定して開発した.
+
+\item Webアプリケーション
+\begin{enumerate}
+\item Webアプリケーションにログインする.
+\item PostgreSQLデータベースに各種操作を行う.
+\item Webアプリケーションからログアウトする.
+\end{enumerate}
+\end{itemize}
 
 \section{iOSアプリケーション}
-iOSアプリケーションを作成するにあたり, 以下の言語とライブラリ, 統合開発環境を利用した.(表3.1参照.)
+iOSアプリケーションを作成するにあたり, 以下の言語とライブラリ, 統合開発環境を利用した(表3.1).
 
 \begin{table}
 \begin{center}
@@ -23,9 +42,7 @@ OpenCV & \\ \hline
 iOSアプリケーションには, 以下の機能を実装する.
 \begin{itemize}
 \item iOSデバイスのカメラにて撮影する
-
 \item 撮影画像から目的の文字列を取得する
-
 \item 取得した文字列をWebアプリケーションのデータベースにPOSTする.
 \end{itemize}
 
@@ -50,7 +67,10 @@ iOSアプリケーションには, 以下の機能を実装する.
 \caption{iOSアプリケーションのクラス図}
 \end{figure}
 
-\subsubsection{(A) Cameraクラス}
+\begin{description}
+
+\item (A) Cameraクラス
+
 Cameraクラスでは, 「iOSアプリケーションのMainViewにボタン等を配置する」, 「iOSデバイスのカメラを起動し, 撮影した画像を保存する」, 「他クラスのメソッドを呼び出す」ことが可能である.
 
 \begin{itemize}
@@ -190,7 +210,7 @@ iOSアプリケーションにて, 画像を取得するためのメソッド.
 カメラ, フォトアルバム, フォトライブラリのいずれかから選択する.
 \end{itemize}
 
-\item imag：PickerController:void
+\item image：PickerController:void
 
 画像取得後に呼び出されるメソッド.
 
@@ -220,7 +240,8 @@ iOSアプリケーション上のMainViewに配置されているボタンを押
 
 \end{itemize}
 
-\subsubsection{(B) Processingクラス}
+\item (B) Processingクラス
+
 Processingクラスでは, 「撮影画像をOpenCVにて加工可能となるように処理を施す」, 「撮影画像中の文字列が含まれている箇所に注目する」, 「注目している箇所のみで光学的文字認識が施されるように, 撮影画像を加工する」ことが可能である.
 
 \begin{itemize}
@@ -334,7 +355,8 @@ CameraクラスのopenPickerControllerメソッドにて取得した撮影画像
 
 \end{itemize}
 
-\subsubsection{(C) Recognizeクラス}
+\item (C) Recognizeクラス
+
 Recognizeクラスでは, 「光学的文字認識を実行する」, 「取得した文字列をCameraクラスに渡す」ことが可能である.
 
 \begin{itemize}
@@ -367,7 +389,7 @@ Tesseract-OCRによる光学的文字認識を実行するメソッド.
 
 \end{itemize}
 
-\subsubsection{(D) PostDBクラス}
+\item (D) PostDBクラス
 \begin{itemize}
 \item 属性
 
@@ -419,6 +441,8 @@ WebアプリケーションのPostgreSQLデータベースへ送信する文字�
 
 \end{itemize}
 
+\end{description}
+
 \section{Webアプリケーション}
 Webアプリケーションを作成するにあたり, 以下の言語とライブラリ, サービスを利用した.(表3.2参照.)
 
@@ -466,7 +490,9 @@ Webアプリケーションには, 以下の機能を実装する.
 \caption{Webアプリケーションのクラス図}
 \end{figure}
 
-\subsubsection{(A) Userクラス}
+\begin{description}
+
+\item (A) Userクラス
 \begin{itemize}
 \item 属性
 
@@ -510,7 +536,7 @@ Webアプリケーションにユーザ登録したユーザがサインイン�
 
 \end{itemize}
 
-\subsubsection{(B) StringDBクラス}
+\item (B) StringDBクラス
 \begin{itemize}
 \item 属性
 
@@ -522,3 +548,4 @@ Webアプリケーションにユーザ登録したユーザがサインイン�
 
 \end{itemize}
 
+\end{description}
