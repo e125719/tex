@@ -1,15 +1,17 @@
 \addvspace {10\p@ }
 \contentsline {figure}{\numberline {1.1}{\ignorespaces 情報通信端末の世帯保有数の推移}}{2}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {2.1}{\ignorespaces MVCアーキテクチャの簡略図}}{14}
-\contentsline {figure}{\numberline {2.2}{\ignorespaces Modelの動作簡略図}}{15}
-\contentsline {figure}{\numberline {2.3}{\ignorespaces Viewの動作簡略図}}{16}
-\contentsline {figure}{\numberline {2.4}{\ignorespaces ルーティング}}{16}
-\contentsline {figure}{\numberline {2.5}{\ignorespaces Controllerの動作簡略図}}{17}
-\contentsline {figure}{\numberline {2.6}{\ignorespaces オンプレミス, IaaS, PaaS, SaaSの比較}}{20}
+\contentsline {figure}{\numberline {2.1}{\ignorespaces MVCアーキテクチャの簡略図}}{15}
+\contentsline {figure}{\numberline {2.2}{\ignorespaces Modelの動作簡略図}}{16}
+\contentsline {figure}{\numberline {2.3}{\ignorespaces Viewの動作簡略図}}{17}
+\contentsline {figure}{\numberline {2.4}{\ignorespaces ルーティング}}{17}
+\contentsline {figure}{\numberline {2.5}{\ignorespaces Controllerの動作簡略図}}{18}
+\contentsline {figure}{\numberline {2.6}{\ignorespaces オンプレミス, IaaS, PaaS, SaaSの比較}}{21}
 \addvspace {10\p@ }
-\contentsline {figure}{\numberline {3.1}{\ignorespaces iOSアプリケーションのユースケース図}}{24}
-\contentsline {figure}{\numberline {3.2}{\ignorespaces iOSアプリケーションのクラス図}}{25}
-\contentsline {figure}{\numberline {3.3}{\ignorespaces Webアプリケーションのユースケース図}}{31}
-\contentsline {figure}{\numberline {3.4}{\ignorespaces Webアプリケーションのクラス図}}{32}
+\contentsline {figure}{\numberline {3.1}{\ignorespaces 車両ナンバー認識システムの簡易システム図}}{24}
+\contentsline {figure}{\numberline {3.2}{\ignorespaces 車両ナンバー認識システムのユースケース図}}{25}
+\contentsline {figure}{\numberline {3.3}{\ignorespaces iOSアプリケーションのユースケース図}}{26}
+\contentsline {figure}{\numberline {3.4}{\ignorespaces iOSアプリケーションのクラス図}}{26}
+\contentsline {figure}{\numberline {3.5}{\ignorespaces Webアプリケーションのユースケース図}}{35}
+\contentsline {figure}{\numberline {3.6}{\ignorespaces Webアプリケーションのクラス図}}{36}
 \addvspace {10\p@ }

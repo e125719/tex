@@ -6,22 +6,38 @@
 
 \subsection{システムの流れ}
 本研究にて構築するシステムは,
-\begin{itemize}
-\item iOSアプリケーション
+\begin{screen}
+\begin{itembox}[l]{iOSアプリケーション}
 \begin{enumerate}
 \item iOSアプリケーションにて車両のナンバープレートを撮影する.
 \item iOSアプリケーションの内部処理にて, 撮影画像から車両ナンバーを文字列として取得する.
 \item 取得した車両ナンバーをWebアプリケーション側のPostgreSQLに送信する.
 \end{enumerate}
-という流れを想定して開発した.
+\end{itembox}
 
-\item Webアプリケーション
+\begin{itembox}[l]{Webアプリケーション}
 \begin{enumerate}
 \item Webアプリケーションにログインする.
 \item PostgreSQLデータベースに各種操作を行う.
 \item Webアプリケーションからログアウトする.
 \end{enumerate}
-\end{itemize}
+\end{itembox}
+\end{screen}
+という流れを想定して開発した.
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=16cm]{fig/system.pdf}
+\end{center}
+\caption{車両ナンバー認識システムの簡易システム図}
+\end{figure}
+
+\begin{figure}
+\begin{center}
+\includegraphics[width=16cm]{fig/usecase_system.png}
+\end{center}
+\caption{車両ナンバー認識システムのユースケース図}
+\end{figure}
 
 \section{iOSアプリケーション}
 iOSアプリケーションを作成するにあたり, 以下の言語とライブラリ, 統合開発環境を利用した(表3.1).
@@ -40,21 +56,23 @@ OpenCV & \\ \hline
 
 \subsection{要件定義}
 iOSアプリケーションには, 以下の機能を実装する.
+\begin{screen}
 \begin{itemize}
 \item iOSデバイスのカメラにて撮影する
 \item 撮影画像から目的の文字列を取得する
 \item 取得した文字列をWebアプリケーションのデータベースにPOSTする.
 \end{itemize}
+\end{screen}
 
 これらの要件を, UMLを用いて分析する.
 
 \subsection{ユースケース}
 ユーザがiOSデバイスのカメラを用いて撮影した画像から, 文字列を検出する.
-その文字列をWebアプリケーションのデータベースに送信し, 集積する.
+その文字列をWebアプリケーションのデータベースに送信し, 集積する(図3.3).
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=14cm]{fig/usecase_ios.png}
+\includegraphics[width=16cm]{fig/usecase_ios.png}
 \end{center}
 \caption{iOSアプリケーションのユースケース図}
 \end{figure}
@@ -62,7 +80,7 @@ iOSアプリケーションには, 以下の機能を実装する.
 \subsection{クラス}
 \begin{figure}
 \begin{center}
-\includegraphics[width=17cm]{fig/class_ios.png}
+\includegraphics[width=16cm]{fig/class_ios.png}
 \end{center}
 \caption{iOSアプリケーションのクラス図}
 \end{figure}
@@ -76,39 +94,38 @@ Cameraクラスでは, 「iOSアプリケーションのMainViewにボタン等�
 \begin{itemize}
 \item 属性
 
+\begin{breakbox}
 \begin{itemize}
 \item imageView：UIImageView
 
 撮影した画像を出力するためのローカル変数.
-出力画像のサイズ等を決定する.
 
 \item image：UIImage
 
-撮影した画像を格納するための変数.
+撮影した画像.
 
 \item procImage：UIImage
 
-Processingクラスにて画像処理された画像を格納するための変数.
-procImageに格納されている画像を用いて, 光学的文字認識を行う.
+Processingクラスにて画像処理された画像.
 
 \item textField：UITextField
 
-Recognizeにて取得した文字列を表示するテキストボックス.
+Recognizeクラスにて取得した文字列を表示するためのテキストボックス.
 
 \item result：NSString
 
-Recognizeにて取得してきた文字列を格納するためのローカル変数.
+Recognizeクラスにて取得してきた文字列.
 \end{itemize}
+\end{breakbox}
 
 \item 操作
 
-\begin{itemize}
-\item makeButton：UIButton
-
+\begin{itembox}[l]{makeButton：UIButton}
 iOSアプリケーションのMainViewにボタンを作成するメソッド.
 
 ボタンを配置する座標, サイズ, ボタンに書かれる文字列, ボタンに付加するタグを指定して呼び出すことで, iOSアプリケーションのMainViewにボタンを作成し配置する.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item rect：CGRect
 
@@ -122,13 +139,15 @@ iOSアプリケーションのMainViewにボタンを作成するメソッド.
 
 ボタンに整数型のタグを付加するための変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item makeImageView：UIImageView
-
+\begin{itembox}[l]{makeImage：UIImageView}
 iOSアプリケーションのMainViewに画像を表示するためのSubViewを作成するメソッド.
 
 画像を配置する座標, サイズ, 出力する画像を指定して呼び出すことで, iOSアプリケーションのMainViewに画像を出力する.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item rect：CGRect
 
@@ -138,13 +157,15 @@ iOSアプリケーションのMainViewに画像を表示するためのSubView�
 
 SubViewに出力する画像を指定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item makeTextField：UITextField
-
+\begin{itembox}[l]{makeTextField：UITextField}
 iOSアプリケーションのMainViewにテキストフィールドを作成するメソッド.
 
 テキストフィールドを配置する座標, サイズ, 入力されるテキストを指定して呼び出すことで, iOSアプリケーションのMainViewにテキストフィールドを作成し配置する.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item rect：CGRect
 
@@ -154,37 +175,41 @@ iOSアプリケーションのMainViewにテキストフィールドを作成す
 
 テキストフィールドに入力する文字列を指定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item textFieldShouldReturn：BOOL
-
+\begin{itembox}[l]{textFieldShouldReturn：BOOL}
 テキストフィールドにて, キーボードでリターンキーを押した際の挙動を制御するメソッド.
 
 文字列を編集後にリターンキーを押した際に呼び出され, SubViewとして呼びだされているキーボードを引っ込める.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item textField：UITextField
 
 編集したい文字列が入力されているテキストフィールド.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item viewDidLoad：void
-
+\begin{itembox}[l]{viewDidLoad：void}
 アプリケーションが起動した際に一度だけ読み込まれるメソッド.
 
 変数の初期化やMainViewにボタン等を配置する際に利用する.
+\end{itembox}
 
-\item didReceiveMemoryWarning：void
-
+\begin{itembox}[l]{didReceiveMemoryWarning：void}
 iOSアプリケーション使用時に, メモリが不足する際に呼び出されるメソッド.
 
 すべてのViewに対して参照を開放する際に利用する.
+\end{itembox}
 
-\item showAlert：void
-
+\begin{itembox}[l]{showAlert：void}
 アラートビューを表示するメソッド.
 
 アラートビューのタイトルと表示するアラートの内容を指定して呼び出すことで, iOSアプリケーションのMainView上にSubViewとしてアラートが表示される.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item title：NSString
 
@@ -194,28 +219,32 @@ iOSアプリケーション使用時に, メモリが不足する際に呼び出
 
 アラートビューに表示するテキストを指定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item openPicker：void
-
+\begin{itembox}[l]{openPicker：void}
 iOSアプリケーションにて, 画像を取得するためのメソッド.
 
 カメラ, フォトアルバム, フォトライブラリから画像を取得する.
 
 このメソッドでは, iOSのカメラ機能にて撮影した画像を取得する際に呼び出す.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item sourceType：UIImagePickerSourceType
 
 イメージピッカーの属性を決定する変数.
 カメラ, フォトアルバム, フォトライブラリのいずれかから選択する.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item image：PickerController:void
-
+\begin{itembox}[l]{imagePickercontroller：void}
 画像取得後に呼び出されるメソッド.
 
 画像を取得した後の処理を行う他クラスのメソッドを呼び出す.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item picker：UIImagePickerController
 
@@ -225,20 +254,23 @@ iOSアプリケーションにて, 画像を取得するためのメソッド.
 
 取得した画像の情報を格納する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item clickButton：IBAction
-
+\begin{itembox}[l]{clickButton：IBAction}
 iOSアプリケーション上のMainViewに配置されているボタンを押下した際に呼び出されるメソッド.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item sender：UIButton
 
 どのボタンが押下されたのかを決定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
 \end{itemize}
 
-\end{itemize}
 
 \item (B) Processingクラス
 
@@ -247,6 +279,7 @@ Processingクラスでは, 「撮影画像をOpenCVにて加工可能となる�
 \begin{itemize}
 \item 属性
 
+\begin{breakbox}
 \begin{itemize}
 \item \_src：Mat
 
@@ -269,52 +302,60 @@ Processingクラスでは, 「撮影画像をOpenCVにて加工可能となる�
 特徴点を内包した矩形の座標, サイズ決定する変数.
 
 \end{itemize}
+\end{breakbox}
+
+\newpage
 
 \item 操作
 
-\begin{itemize}
-\item cvtMat：Mat
-
+\begin{itembox}[l]{cvtMat：Mat}
 UIImage型の画像をMat型に変換するメソッド.
 
 UIImage型の入力画像を指定して呼び出すことで, OpenCVで処理可能なMat型に変換する.
 
+\begin{itembox}[l]{srcImage：UIImage}
 \begin{itemize}
 \item srcImage：UIImage
 
 UIImage型の画像を格納する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item cvtGrayScale：Mat
-
+\begin{itembox}[l]{cvtGrayMat：Mat}
 Mat型画像をグレースケール化するメソッド.
 
 cvtMatにてMat型に変換した入力画像にグレースケール化処理を施す.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item srcMat：Mat
 
 3チャネルの入力カラー画像を格納する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item findCorner：vector$<$KeyPoint$>$
-
+\begin{itembox}[l]{findCorner：vector$<$KeyPoint$>$}
 グレースケール画像から特徴点を検出するメソッド.
 
 cvtGrayScaleにてグレースケール処理を施した画像を指定することで, その画像中から特徴点を検出する.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item srcMat：Mat
 
 グレースケール画像を格納する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item makeRect：Rect
-
+\begin{itembox}[l]{makeRect：Rect}
 特徴点を内包する矩形の座標, サイズを決定するメソッド.
 
 特徴点の集合を指定することで, 特徴点の多い部分に注目するための矩形を設定する.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item kp：vector$<$KeyPoint$>$
 
@@ -324,13 +365,15 @@ cvtGrayScaleにてグレースケール処理を施した画像を指定する�
 
 グレースケール画像を格納するための変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item cvtBinaryRoi：Mat
-
+\begin{itembox}[l]{cvyBinaryRoi：Mat}
 Mat型カラー画像をバイナリ画像へ変換するメソッド.
 
 makeRectにて設定した矩形を指定することで, 注目している範囲をバイナリ画像化する.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item srcMat：Mat
 
@@ -340,20 +383,23 @@ makeRectにて設定した矩形を指定することで, 注目している範�
 
 注目する矩形範囲を決定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item processing
-
+\begin{itembox}[l]{provessing：UIImage}
 Processingクラスのメソッドをコントロールするメソッド.
 
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item srcImage：UIImage
 
 CameraクラスのopenPickerControllerメソッドにて取得した撮影画像を格納する変数.
 \end{itemize}
-
+\end{itembox}
+\end{itembox}
 \end{itemize}
 
-\end{itemize}
+\newpage
 
 \item (C) Recognizeクラス
 
@@ -362,37 +408,40 @@ Recognizeクラスでは, 「光学的文字認識を実行する」, 「取得�
 \begin{itemize}
 \item 属性
 
+\begin{breakbox}
 \begin{itemize}
 \item \_origImage：UIImage
 
 光学的文字認識を実行する画像を格納するための変数.
 \end{itemize}
+\end{breakbox}
 
 \item 操作
 
-\begin{itemize}
-\item setOrigImage：void
-
+\begin{itembox}[l]{setOrigImage：void}
 光学的文字認識を実行する画像を取得するためのメソッド.
 
 Processingクラスのprocessingメソッドにて処理の施された画像を受け取り, \_origImageに格納する.
+
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item image：UIImage
 
 光学的文字認識を施す画像を指定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item analyze：void
-
+\begin{itembox}[l]{analyze：void}
 Tesseract-OCRによる光学的文字認識を実行するメソッド.
-\end{itemize}
-
+\end{itembox}
 \end{itemize}
 
 \item (D) PostDBクラス
 \begin{itemize}
 \item 属性
 
+\begin{breakbox}
 \begin{itemize}
 \item \_conn：PGconn
 
@@ -406,45 +455,52 @@ PostgreSQLデータベースの接続する際に必要となる情報を格納�
 
 接続したPostgreSQLにて実行するクエリを決定する変数.
 \end{itemize}
+\end{breakbox}
 
 \item 操作
 
-\begin{itemize}
-\item connDB：void
-
+\begin{itembox}[l]{connDB：void}
 WebアプリケーションのPostgreSQLに接続するメソッド.
+
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item conninfo：const char
 
 PostgreSQLへの接続状態を保存する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item execDB：void
-
+\begin{itembox}[l]{execDB：void}
 WebアプリケーションのPostgreSQLデータベースへクエリを発行し, データベースへデータを追加する.
+
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item str：NSString
 
 PostgreSQLデータベースへ送信する文字列を決定する変数.
 \end{itemize}
+\end{itembox}
+\end{itembox}
 
-\item postData：void
-
+\begin{itembox}[l]{postData：void}
 PostDBクラスのメソッドをコントロールするメソッド.
+
+\begin{itembox}[l]{引数}
 \begin{itemize}
 \item postString：NSString
 
 WebアプリケーションのPostgreSQLデータベースへ送信する文字列を決定する変数.
 \end{itemize}
-
-\end{itemize}
+\end{itembox}
+\end{itembox}
 
 \end{itemize}
 
 \end{description}
 
 \section{Webアプリケーション}
-Webアプリケーションを作成するにあたり, 以下の言語とライブラリ, サービスを利用した.(表3.2参照.)
+Webアプリケーションを作成するにあたり, 以下の言語とライブラリ, サービスを利用した(表3.2).
 
 \begin{table}
 \begin{center}
@@ -463,29 +519,33 @@ Heroku & \\ \hline
 \subsection{要件定義}
 Webアプリケーションには, 以下の機能を実装する.
 
+\begin{screen}
 \begin{itemize}
 \item データベースにて, iOSアプリケーションから送信された文字列を送信された日時/時刻とともに管理する.
 
 \item 集積したデータを文字列, 日付にて検索する.
 \end{itemize}
+\end{screen}
 
 これらの要件を, UMLを用いて分析する.
 
 \subsection{ユースケース}
-ユーザはiOSアプリケーションから送信された全データを閲覧することができ, 文字列, 送信した日付で検索することができる.
+ユーザはiOSアプリケーションから送信された全データを閲覧することができ, 文字列, 送信した日付で検索することができる(図3.5).
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=10cm]{fig/usecase_web.png}
+\includegraphics[width=16cm]{fig/usecase_web.png}
 \end{center}
 \caption{Webアプリケーションのユースケース図}
 \end{figure}
+
+\newpage
 
 \subsection{クラス}
 
 \begin{figure}
 \begin{center}
-\includegraphics[width=13cm]{fig/class_web.png}
+\includegraphics[width=16cm]{fig/class_web.png}
 \end{center}
 \caption{Webアプリケーションのクラス図}
 \end{figure}
@@ -496,6 +556,7 @@ Webアプリケーションには, 以下の機能を実装する.
 \begin{itemize}
 \item 属性
 
+\begin{breakbox}
 \begin{itemize}
 \item current\_sign\_in\_at：datetime
 
@@ -533,6 +594,7 @@ Webアプリケーションにユーザ登録したユーザがサインイン�
 
 ユーザがサインインした回数を記録するカラム.
 \end{itemize}
+\end{breakbox}
 
 \end{itemize}
 
@@ -540,11 +602,13 @@ Webアプリケーションにユーザ登録したユーザがサインイン�
 \begin{itemize}
 \item 属性
 
+\begin{screen}
 \begin{itemize}
 \item string：string
 
 光学的文字認識にて取得した文字列を記録するカラム.
 \end{itemize}
+\end{screen}
 
 \end{itemize}
 

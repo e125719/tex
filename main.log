@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.sjis) (TeX Live 2015/W32TeX) (preloaded format=platex 2015.12.22)  12 FEB 2016 05:37
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.sjis) (TeX Live 2015/W32TeX) (preloaded format=platex 2015.12.22)  13 FEB 2016 21:59
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -78,33 +78,69 @@ Package: url 2013/09/16  ver 3.4  Verb mode for urls, etc.
 (c:/texlive/2015/texmf-dist/tex/latex/comment/comment.sty
 \CommentStream=\write3
 
-Excluding comment 'comment') (./main.aux)
+Excluding comment 'comment')
+(c:/texlive/2015/texmf-dist/tex/platex/base/ascmac.sty
+(c:/texlive/2015/texmf-dist/tex/platex/base/tascmac.sty
+\@savetbaselineshift=\dimen123
+\@saveybaselineshift=\dimen124
+\scb@x=\box43
+\scscb@x=\box44
+\@bw=\dimen125
+\@nbox=\box45
+\@nbody=\box46
+\@scw=\dimen126
+\@itemh=\dimen127
+\@iboxpos=\toks18
+\@iboxstr=\box47
+\@bwsp=\box48
+\@@bwsp=\box49
+\@bcal=\count93
+\shaderule=\dimen128
+))
+(c:/texlive/2015/texmf-dist/tex/latex/fancybox/fancybox.sty
+Package: fancybox 2010/05/15 1.4
+
+Style option: `fancybox' v1.4 <2010/05/15> (tvz)
+\@fancybox=\box50
+\shadowsize=\dimen129
+\@Sbox=\box51
+\do@VerbBox=\toks19
+\the@fancyput=\toks20
+\this@fancyput=\toks21
+\EndVerbatimTokens=\toks22
+\Verbatim@Outfile=\write4
+\Verbatim@Infile=\read1
+) (./eclbkbox.sty
+\bk@bxb=\box52
+\bk@bxa=\box53
+\bk@lcnt=\count94
+) (./main.aux)
 \openout1 = `main.aux'.
 
-LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
-LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 24.
-LaTeX Font Info:    ... okay on input line 24.
+LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for T1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OT1/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMS/cmsy/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for OMX/cmex/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for U/cmr/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for JY1/mc/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
+LaTeX Font Info:    Checking defaults for JT1/mc/m/n on input line 27.
+LaTeX Font Info:    ... okay on input line 27.
 File: fig/ryukyu.pdf Graphic file (type pdf)
  <fig/ryukyu.pdf> [0
 
 ]
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JT1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JT1/gt/m/n' tried instead on input line 35.
 LaTeX Font Info:    Font shape `JY1/mc/bx/n' in size <24.88> not available
-(Font)              Font shape `JY1/gt/m/n' tried instead on input line 32.
+(Font)              Font shape `JY1/gt/m/n' tried instead on input line 35.
  (./main.toc
 LaTeX Font Info:    Font shape `JT1/mc/bx/n' in size <12> not available
 (Font)              Font shape `JT1/gt/m/n' tried instead on input line 1.
@@ -116,22 +152,22 @@ LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <8> on input line 2.
 LaTeX Font Info:    External font `cmex10' loaded for size
 (Font)              <6> on input line 2.
-
-[1
+ [1
 
 ])
-\tf@toc=\write4
-\openout4 = `main.toc'.
+\tf@toc=\write5
+\openout5 = `main.toc'.
 
- [2] (./main.lof)
-\tf@lof=\write5
-\openout5 = `main.lof'.
+ [2]
+(./main.lof)
+\tf@lof=\write6
+\openout6 = `main.lof'.
 
  [3
 
 ] (./main.lot)
-\tf@lot=\write6
-\openout6 = `main.lot'.
+\tf@lot=\write7
+\openout7 = `main.lot'.
 
  (./chapter1.tex [4
 
@@ -195,72 +231,85 @@ LaTeX Font Info:    Font shape `OMS/cmr/m/n' in size <12> not available
  [4]) (./chapter2.tex
 [5] [6]
 第 2 章
+
+LaTeX Font Warning: Font shape `JT1/mc/m/it' undefined
+(Font)              using `JT1/mc/m/n' instead on input line 12.
+
+
+LaTeX Font Warning: Font shape `JY1/mc/m/it' undefined
+(Font)              using `JY1/mc/m/n' instead on input line 12.
+
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <7> on input line 11.
+(Font)              <7> on input line 12.
 LaTeX Font Info:    External font `cmex10' loaded for size
-(Font)              <5> on input line 11.
+(Font)              <5> on input line 12.
 [7
 
 ]
-Overfull \hbox (13.56113pt too wide) in paragraph at lines 51--52
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
 [] \JY1/mc/m/n/12 “ \OT1/cmr/m/n/12 Xcode \JY1/mc/m/n/12 は\OT1/cmr/m/n/12 , A
 p-ple Inc. \JY1/mc/m/n/12 が開発\OT1/cmr/m/n/12 , \JY1/mc/m/n/12 配布している\O
-T1/cmr/m/n/12 , Mac/iPhone/iPad/Apple
+T1/cmr/m/n/12 ,
+ []
+
+
+Underfull \hbox (badness 10000) in paragraph at lines 56--57
+\OT1/cmr/m/n/12 Mac/iPhone/iPad/Apple Watch \JY1/mc/m/n/12 向けアプリケ ーシ ョ
+ ン開発
  []
 
 [8]
-Overfull \hbox (15.87881pt too wide) in paragraph at lines 97--119
+Overfull \hbox (15.87881pt too wide) in paragraph at lines 107--129
  [] 
  []
 
 [9] [10] [11] [12] Excluding 'comment' comment. [13]
-Overfull \hbox (37.41508pt too wide) in paragraph at lines 308--309
+Underfull \hbox (badness 10000) in paragraph at lines 323--324
 [] \JY1/mc/m/n/12 “ \OT1/cmr/m/n/12 MVC \JY1/mc/m/n/12 ア ーキテクチ ャ とは\O
-T1/cmr/m/n/12 , \JY1/mc/m/n/12 アプリケ ーシ ョ ンの構造を \OT1/cmr/m/n/12 Mode
-l/View/Controller
+T1/cmr/m/n/12 , \JY1/mc/m/n/12 アプリケ ーシ ョ ンの構造を
+ []
+
+
+Underfull \hbox (badness 2269) in paragraph at lines 323--324
+\OT1/cmr/m/n/12 Model/View/Controller \JY1/mc/m/n/12 の \OT1/cmr/m/n/12 3 \JY1/
+mc/m/n/12 つの要素に分割し\OT1/cmr/m/n/12 , \JY1/mc/m/n/12 アプリケ ーシ ョ
  []
 
 File: fig/mvc.png Graphic file (type bmp)
-<fig/mvc.png>
+<fig/mvc.png> [14]
 File: fig/model.png Graphic file (type bmp)
- <fig/model.png> [14]
+ <fig/model.png> [15]
 File: fig/view.png Graphic file (type bmp)
  <fig/view.png>
 File: fig/route.png Graphic file (type bmp)
- <fig/route.png> [15] [16]
+ <fig/route.png> [16]
+[17]
 File: fig/controller.png Graphic file (type bmp)
-
-<fig/controller.png> Excluding 'comment' comment. [17]
-Overfull \hbox (13.29337pt too wide) in paragraph at lines 478--479
-\OT1/cmr/m/n/12 PL/pgSQL, PL/PSM, \JY1/mc/m/n/12 スクリプト言語 \OT1/cmr/m/n/12
- (PL/Perl, PL/php, PL/Python, PL/Ruby,
- []
-
-[18]
+ <fig/controller.png> Excluding 'comment' comment. [18] [19] [20]
 File: fig/paas.png Graphic file (type bmp)
- <fig/paas.png> [19] [20]) (./chapter3.tex [21]
-第 3 章
-[22
 
-]
+<fig/paas.png> [21]) (./chapter3.tex [22]
+第 3 章
+File: fig/system.pdf Graphic file (type pdf)
+<fig/system.pdf>
+File: fig/usecase_system.png Graphic file (type bmp)
+ <fig/usecase_system.png> [23
+
+] [24]
 File: fig/usecase_ios.png Graphic file (type bmp)
  <fig/usecase_ios.png>
 File: fig/class_ios.png Graphic file (type bmp)
- <fig/class_ios.png>
-Overfull \hbox (28.45276pt too wide) in paragraph at lines 65--66
- [] 
- []
 
-[23] [24] [25] [26] [27] [28] [29]
+<fig/class_ios.png> [25] [26] [27] [28] [29] [30] [31] [32] [33] [34]
 File: fig/usecase_web.png Graphic file (type bmp)
- <fig/usecase_web.png>
-File: fig/class_web.png Graphic file (type bmp)
- <fig/class_web.png>
-[30] [31]) (./chapter4.tex [32]
-第 4 章
-[33
 
-]) (./chapter5.tex [34]) (./bibliography.tex [35
+<fig/usecase_web.png> [35]
+File: fig/class_web.png Graphic file (type bmp)
+ <fig/class_web.png> [36]) (./chapter4.tex [37]
+第 4 章
+[38
+
+]) (./chapter5.tex [39]) (./bibliography.tex [40
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 8--10
@@ -268,7 +317,7 @@ Underfull \hbox (badness 10000) in paragraph at lines 8--10
 tics / data / 150717 _ 1 . pdf$
  []
 
-[36
+[41
 
 ]
 Underfull \hbox (badness 10000) in paragraph at lines 86--88
@@ -276,16 +325,20 @@ Underfull \hbox (badness 10000) in paragraph at lines 86--88
 m-[]market-[]share . aspx ?
  []
 
-) (./thanks.tex [37]) [38
+) (./thanks.tex [42]) [43
 
-] (./main.aux) ) 
+] (./main.aux)
+
+LaTeX Font Warning: Some font shapes were not available, defaults substituted.
+
+ ) 
 Here is how much of TeX's memory you used:
- 1145 strings out of 493742
- 14608 string characters out of 6154160
- 87539 words of memory out of 5000000
- 4651 multiletter control sequences out of 15000+600000
- 16071 words of font info for 63 fonts, out of 8000000 for 9000
+ 1427 strings out of 493742
+ 17947 string characters out of 6154160
+ 93462 words of memory out of 5000000
+ 4915 multiletter control sequences out of 15000+600000
+ 16868 words of font info for 66 fonts, out of 8000000 for 9000
  929 hyphenation exceptions out of 8191
- 27i,9n,21p,345b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
+ 27i,10n,21p,345b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (43 pages, 116396 bytes).
+Output written on main.dvi (48 pages, 134552 bytes).
