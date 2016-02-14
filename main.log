@@ -1,4 +1,4 @@
-This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.sjis) (TeX Live 2015/W32TeX) (preloaded format=platex 2015.12.22)  13 FEB 2016 21:59
+This is e-pTeX, Version 3.14159265-p3.6-141210-2.6 (utf8.sjis) (TeX Live 2015/W32TeX) (preloaded format=platex 2015.12.22)  14 FEB 2016 15:24
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -259,18 +259,18 @@ Underfull \hbox (badness 10000) in paragraph at lines 56--57
  []
 
 [8]
-Overfull \hbox (15.87881pt too wide) in paragraph at lines 107--129
+Overfull \hbox (15.87881pt too wide) in paragraph at lines 109--131
  [] 
  []
 
 [9] [10] [11] [12] Excluding 'comment' comment. [13]
-Underfull \hbox (badness 10000) in paragraph at lines 323--324
+Underfull \hbox (badness 10000) in paragraph at lines 327--328
 [] \JY1/mc/m/n/12 “ \OT1/cmr/m/n/12 MVC \JY1/mc/m/n/12 ア ーキテクチ ャ とは\O
 T1/cmr/m/n/12 , \JY1/mc/m/n/12 アプリケ ーシ ョ ンの構造を
  []
 
 
-Underfull \hbox (badness 2269) in paragraph at lines 323--324
+Underfull \hbox (badness 2269) in paragraph at lines 327--328
 \OT1/cmr/m/n/12 Model/View/Controller \JY1/mc/m/n/12 の \OT1/cmr/m/n/12 3 \JY1/
 mc/m/n/12 つの要素に分割し\OT1/cmr/m/n/12 , \JY1/mc/m/n/12 アプリケ ーシ ョ
  []
@@ -341,4 +341,4 @@ Here is how much of TeX's memory you used:
  929 hyphenation exceptions out of 8191
  27i,10n,21p,345b,516s stack positions out of 5000i,500n,10000p,200000b,80000s
 
-Output written on main.dvi (48 pages, 134552 bytes).
+Output written on main.dvi (48 pages, 134388 bytes).
