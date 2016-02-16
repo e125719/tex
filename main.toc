@@ -28,10 +28,12 @@
 \contentsline {subsection}{\numberline {3.3.1}要件定義}{34}
 \contentsline {subsection}{\numberline {3.3.2}ユースケース}{35}
 \contentsline {subsection}{\numberline {3.3.3}クラス}{36}
-\contentsline {chapter}{\numberline {第4章}本研究の利用例, 利用アイデア}{38}
-\contentsline {section}{\numberline {4.1}利用アイデア１：緊急車両や警察車両への住所通達システム}{38}
-\contentsline {subsection}{\numberline {4.1.1}背景と目的}{38}
-\contentsline {subsection}{\numberline {4.1.2}システムの要件定義}{38}
-\contentsline {subsection}{\numberline {4.1.3}このシステムを利用することで解決する問題}{38}
-\contentsline {section}{\numberline {4.2}}{39}
-\contentsline {subsection}{\numberline {4.2.1}}{39}
+\contentsline {section}{\numberline {3.4}本システムの評価}{37}
+\contentsline {subsection}{\numberline {3.4.1}評価方法}{37}
+\contentsline {subsection}{\numberline {3.4.2}評価}{37}
+\contentsline {subsection}{\numberline {3.4.3}問題の解決案}{39}
+\contentsline {chapter}{\numberline {第4章}本研究の利用例, 利用アイデア}{40}
+\contentsline {section}{\numberline {4.1}利用アイデア１：緊急車両や警察車両への住所通達システム}{40}
+\contentsline {subsection}{\numberline {4.1.1}背景と目的}{40}
+\contentsline {subsection}{\numberline {4.1.2}システムの要件定義}{40}
+\contentsline {subsection}{\numberline {4.1.3}このシステムを利用することで解決する問題}{40}
